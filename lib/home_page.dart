@@ -19,7 +19,10 @@ class HomePage extends StatelessWidget {
         ),
         title: ActionChip(
           label: Text("Jabalpur"),
-          avatar: Icon(IconlyLight.location,color: Colors.white,),
+          avatar: Icon(
+            IconlyLight.location,
+            color: Colors.white,
+          ),
           labelStyle: TextStyle(color: Colors.white),
           shape: StadiumBorder(),
           backgroundColor: Color(0xff272b30),
@@ -39,8 +42,32 @@ class HomePage extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          Text("Best for Rent !",style: theme.textTheme.headlineMedium?.copyWith(color: Colors.white),
-          )
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Best for Rent !",
+                  style: theme.textTheme.headlineMedium
+                      ?.copyWith(color: Colors.white),
+                ),
+                SizedBox(
+                  height: 90,
+                  child: ListView.separated(
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      return Text("Index ${index +1}",
+                      style: TextStyle(color: Colors.white),
+                      );
+                    },
+                    separatorBuilder: (context,index)=> const SizedBox(width: 15),
+                    itemCount: 5,
+                  ),
+                )
+              ],
+            ),
+          ),
         ],
       ),
     );
