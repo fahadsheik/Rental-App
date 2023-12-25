@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:rent_360_app/data/categories.dart';
-import 'package:rent_360_app/data/products.dart';
+import 'package:rent_360_app/data/products.dart' ;
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
