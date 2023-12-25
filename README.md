@@ -1,5 +1,5 @@
 # Rental App
 
-A new Flutter project.
+A new Rental App UI for the front page.
 
-## Getting Started
+## Getting Starte

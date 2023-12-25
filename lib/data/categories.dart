@@ -11,7 +11,7 @@ class Category {
 List<Category> categories = [
   Category(
     name: "Sports",
-    image: "assets/screwdriver.png",
+    image: "assets/cycle.png",
     color: const Color(0xffc2f6bf),
   ),
   Category(
