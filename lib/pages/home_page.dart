@@ -46,7 +46,7 @@ class HomePage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(bottom: 8.0),
                   child: Text(
-                    "Find the best to rent",
+                    "Best For Rent - Rent360",
                     style: theme.textTheme.headlineMedium?.copyWith(color: Colors.white),
                   ),
                 ),
