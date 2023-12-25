@@ -1,5 +1,7 @@
-# Rental App
+# Rent360 App
 
-A new Rental App UI for the front page.
+A new Rental App UI .
 
-## Getting Starte
+# Images
+
+
