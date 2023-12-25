@@ -43,22 +43,38 @@ class HomePage extends StatelessWidget {
       body: ListView(
         children: [
           Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  "Best for Rent !",
-                  style: theme.textTheme.headlineMedium
-                      ?.copyWith(color: Colors.white),
+                Padding(
+                  padding: const EdgeInsets.only(bottom:8.0),
+                  child:Text(
+                    "Best for Rent !",
+                    style:theme.textTheme.headlineMedium?.copyWith(color: Colors.white),
+                  ),
                 ),
                 SizedBox(
                   height: 90,
                   child: ListView.separated(
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
-                      return Text("Index ${index +1}",
-                      style: TextStyle(color: Colors.white),
+                      return Container(
+                        height: double.maxFinite,
+                        width: 90,
+                        padding: const EdgeInsets.all(4),
+                        decoration: BoxDecoration(
+                          color: Colors.orange,
+                          borderRadius: BorderRadius.circular(20)
+                        ),
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              "assets/screwdriver.png",
+                              width: 50,
+                            )
+                          ],
+                        ),
                       );
                     },
                     separatorBuilder: (context,index)=> const SizedBox(width: 15),
